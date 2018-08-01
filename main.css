@@ -1,0 +1,193 @@
+:root {
+    --main-accent-color: #b477ff;
+    --main-accent-color-fade: #f2f3ff;
+}
+html {
+    min-height: 100%;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+    cursor: url('http://cur.cursors-4u.net/food/foo-6/foo515.cur'), auto;
+    background: linear-gradient(#54fff6, var(--main-accent-color));
+}
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: crosshair;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+}
+a:hover {
+    color: var(--main-accent-color);
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: crosshair;
+}
+body {
+    font-family: 'Unica One', cursive;
+    padding: 0;
+    margin: 20 px;
+}
+.heading {
+    margin: auto;
+    padding: 20 px;
+}
+.heading img {
+    max-width: 15%;
+    height: auto;
+}
+.footer {
+    margin: 20px;
+    width: auto;
+    padding: 20 px;
+}
+.footer p {
+    text-align: center;
+    font-color: #bcbcbc;
+    font-size: 11px;    
+    margin: 20 px;
+    padding: 20 px;
+}
+.content {
+    margin: auto;
+    width: 60%;
+    /*border: 3px dashed #e7e7e7;*/
+    padding: 20 px;
+}
+.content p {
+    text-align: center;
+    margin: 20 px;
+    padding: 20 px;
+}
+
+/* wrapper */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, 200px);
+  text-align: center;
+  vertical-align: middle;
+}
+.one {
+  grid-column: 2;
+  grid-row: 1/2;
+    border: dotted;
+}
+.two { 
+  grid-column: 3;
+  grid-row: 1/2;
+    border: dotted;
+}
+.three {
+  grid-column: 2;
+  grid-row: 2;
+    border: dotted;
+}
+.four {
+  grid-column: 3;
+  grid-row: 2;
+    border: dotted;
+}
+.chart {
+  grid-column: 1;
+  grid-row: 1;
+    width: 200px;
+    height: 500px;
+    position: absolute;
+}
+
+/* Pie Chart */
+.wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, 100px);    
+}
+.c1 {
+
+  grid-column: 1;
+  grid-row: 1;
+  border: solid;
+  border-radius: 95% 0px 0px 0px;
+    
+}
+.c2 { 
+   
+  grid-column: 2;
+  grid-row: 1/2;
+  border: solid;
+  border-radius: 0px 95% 0px 0px;
+}
+.c3 {
+   
+  grid-column: 1;
+  grid-row: 2;
+  border: solid;
+  border-radius: 0px 0px 0px 95%;
+}
+.c4 {
+  
+  grid-column: 2;
+  grid-row: 2;
+  border: solid;
+  border-radius: 0px 0px 95% 0px;
+}
+/* Buttons */
+.button {
+    background-color: white;
+    border-color: var(--main-accent-color);
+    border-radius: 20px;
+    border-style: dashed;
+    font-weight: bold;
+    color: var(--main-accent-color);
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: crosshair;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+}
+.button:hover {
+    background-color: var(--main-accent-color-fade);
+    color: var(--main-accent-color);
+    text-decoration: none;
+}
+
+/* remind buttons */
+.remind {
+    
+}
+
+/* Scrollbar */	
+::-webkit-scrollbar {
+    width: 10px;
+    background: #fff;
+    border: 1px solid #fff;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-accent-color); /* color of moving part */
+    border: 1.5px solid #fff; /* overlaps with border of total scrollbar */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-accent-color-fade);
+    border:1px var(--main-accent-color) solid;
+}
+
+/* Selection */
+::-moz-selection {
+    color: white;
+    background: var(--main-accent-color);
+}
+::selection {
+    color: white; 
+    background: var(--main-accent-color);
+}
